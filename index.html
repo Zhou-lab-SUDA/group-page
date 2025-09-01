@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>周哲敏教授团队 - 苏州大学 Zhou-lab</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- 顶部虚化背景 -->
+  <div class="hero">
+    <div class="hero-content">
+      <h1 id="site-title">加载中...</h1>
+      <p id="site-subtitle">加载中...</p>
+    </div>
+  </div>
+
+  <!-- 导航栏 -->
+  <nav>
+    <ul>
+      <li><a href="#about">团队介绍</a></li>
+      <li><a href="#members">团队成员</a></li>
+      <li><a href="#publications">发表文章</a></li>
+      <li><a href="#activities">实验室活动</a></li>
+      <li><a href="#jobs">招聘信息</a></li>
+    </ul>
+  </nav>
+
+  <!-- 主容器 -->
+  <div class="container">
+
+    <!-- 团队介绍 -->
+    <section id="about">
+      <h2>团队简介</h2>
+      <p id="intro-text"></p>
+      <p id="mission-text"></p>
+
+      <h3>学术经历</h3>
+      <p><strong id="prof-name"></strong>，<span id="prof-title"></span>。<span id="prof-bio"></span></p>
+      <p><span id="prof-edu"></span></p>
+      <p><span id="prof-roles"></span></p>
+    </section>
+
+    <!-- 团队成员 -->
+    <section id="members">
+      <h2>团队成员</h2>
+      <div id="members-list"></div>
+    </section>
+
+    <!-- 发表文章 -->
+    <section id="publications">
+      <h2>发表文章</h2>
+      <div id="publications-list"></div>
+      <p><em>更多论文请见 <a href="https://scholar.google.com/citations?user=XXXXXX" target="_blank">Google Scholar</a></em></p>
+    </section>
+
+    <!-- 实验室活动 -->
+    <section id="activities">
+      <h2>实验室活动</h2>
+      <div id="activities-list"></div>
+    </section>
+
+    <!-- 招聘信息 -->
+    <section id="jobs">
+      <h2>招聘信息</h2>
+      <div id="jobs-list"></div>
+      <p><strong>联系方式：</strong>请将简历发送至 <a id="contact-email" href="#">邮箱</a>，邮件标题注明“应聘岗位+姓名”。</p>
+    </section>
+
+  </div>
+
+  <!-- 页脚 -->
+  <footer>
+    <p>&copy; <span id="year"></span> 周哲敏教授团队 | 苏州大学生命科学学院</p>
+    <p id="address"></p>
+  </footer>
+
+  <!-- 加载数据并渲染 -->
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      fetch('data.json')
+        .then(res => res.json())
+        .then(data => {
+          // 填充站点信息
+          document.getElementById('site-title').textContent = data.site.title;
+          document.getElementById('site-subtitle').textContent = data.site.subtitle;
+
+          // 填充简介
+          document.getElementById('intro-text').innerHTML = data.about.introduction;
+          document.getElementById('mission-text').innerHTML = data.about.mission;
+
+          // 教授信息
+          document.getElementById('prof-name').textContent = data.about.professor.name;
+          document.getElementById('prof-title').textContent = data.about.professor.title;
+          document.getElementById('prof-bio').innerHTML = data.about.professor.bio;
+          document.getElementById('prof-edu').textContent = data.about.professor.education;
+          document.getElementById('prof-roles').textContent = data.about.professor.roles;
+
+          // 成员
+          const membersList = document.getElementById('members-list');
+          data.members.forEach(m => {
+            const div = document.createElement('div');
+            div.className = 'member';
+            div.innerHTML = `
+              <img src="${m.image}" alt="${m.name}">
+              <div class="member-info">
+                <h4>${m.name} ${m.role}</h4>
+                <p><strong>研究方向：</strong>${m.research}</p>
+                <p><strong>邮箱：</strong><a href="mailto:${m.email}">${m.email}</a></p>
+              </div>
+            `;
+            membersList.appendChild(div);
+          });
+
+          // 发表文章
+          const pubList = document.getElementById('publications-list');
+          data.publications.forEach(p => {
+            const div = document.createElement('div');
+            div.className = 'publication';
+            div.innerHTML = `
+              <h4>${p.title}. <em>${p.journal}</em>, ${p.year}, ${p.details}.</h4>
+              <p>DOI: <a href="https://doi.org/${p.doi}" target="_blank">${p.doi}</a></p>
+            `;
+            pubList.appendChild(div);
+          });
+
+          // 实验室活动
+          const actList = document.getElementById('activities-list');
+          data.activities.forEach(a => {
+            const div = document.createElement('div');
+            div.className = 'activity';
+            let imgHtml = '';
+            if (a.image) {
+              imgHtml = `<img src="${a.image}" alt="活动照片">`;
+            }
+            div.innerHTML = `
+              <h4>${a.title}</h4>
+              <p>${a.description}</p>
+              ${imgHtml}
+            `;
+            actList.appendChild(div);
+          });
+
+          // 招聘信息
+          const jobList = document.getElementById('jobs-list');
+          data.jobs.forEach(j => {
+            const div = document.createElement('div');
+            div.className = 'job';
+            const details = j.details.map(d => `<p>${d}</p>`).join('');
+            div.innerHTML = `<h4>${j.position}</h4>${details}`;
+            jobList.appendChild(div);
+          });
+
+          // 联系方式
+          const emailLink = document.getElementById('contact-email');
+          emailLink.href = `mailto:${data.contact.email}`;
+          emailLink.textContent = data.contact.email;
+
+          document.getElementById('address').textContent = data.contact.address;
+          document.getElementById('year').textContent = new Date().getFullYear();
+        })
+        .catch(err => console.error('加载数据失败:', err));
+    });
+  </script>
+
+</body>
+</html>

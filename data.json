@@ -1,0 +1,113 @@
+{
+  "site": {
+    "title": "周哲敏教授团队",
+    "subtitle": "Zhou-lab @ 苏州大学 | 合成生物学与生物催化"
+  },
+  "about": {
+    "introduction": "苏州大学周哲敏教授团队（Zhou-lab）致力于合成生物学、酶工程与生物催化领域的前沿研究。团队聚焦于新型酶的设计与改造、代谢通路的构建与优化，以及高附加值化学品的绿色生物制造。我们结合分子生物学、蛋白质工程、系统生物学与人工智能方法，推动生物制造技术的创新与应用。",
+    "mission": "实验室依托苏州大学生命科学学院，拥有先进的分子生物学、发酵工程与分析检测平台，与国内外多家高校和企业保持紧密合作，致力于培养具有国际视野的创新型人才。",
+    "professor": {
+      "name": "周哲敏",
+      "title": "教授、博士生导师",
+      "bio": "长期从事酶工程与合成生物学研究，在 <em>Nature Communications</em>, <em>Metabolic Engineering</em>, <em>ACS Catalysis</em> 等国际权威期刊发表论文50余篇，主持国家自然科学基金重点项目、面上项目及省部级科研项目多项。曾获江苏省科学技术奖、中国轻工业联合会科技进步奖等荣誉。",
+      "education": "2005年于江南大学获博士学位，随后在新加坡国立大学从事博士后研究。2008年加入苏州大学，历任副教授、教授。",
+      "roles": "现任中国生物工程学会理事、江苏省生物技术协会常务理事。"
+    }
+  },
+  "members": [
+    {
+      "name": "周哲敏",
+      "role": "教授",
+      "image": "assets/images/zhou.jpg",
+      "research": "合成生物学、酶工程、生物催化",
+      "email": "zmzhou@suda.edu.cn"
+    },
+    {
+      "name": "张晓琳",
+      "role": "博士后",
+      "image": "assets/images/postdoc.jpg",
+      "research": "蛋白质理性设计",
+      "email": "xzhang@suda.edu.cn"
+    },
+    {
+      "name": "李明",
+      "role": "博士生",
+      "image": "assets/images/phd1.jpg",
+      "research": "代谢通路重构",
+      "email": "mli@suda.edu.cn"
+    },
+    {
+      "name": "王雪",
+      "role": "硕士生",
+      "image": "assets/images/ms1.jpg",
+      "research": "非天然氨基酸酶催化",
+      "email": "xwang@suda.edu.cn"
+    }
+  ],
+  "publications": [
+    {
+      "title": "Engineering a thermostable transaminase for asymmetric synthesis of chiral amines",
+      "journal": "ACS Catalysis",
+      "year": "2023",
+      "details": "13(5), 3210–3221",
+      "doi": "10.1021/acscatal.2c06012"
+    },
+    {
+      "title": "Dynamic regulation of cofactor regeneration in E. coli for efficient biosynthesis of 1,3-propanediol",
+      "journal": "Metabolic Engineering",
+      "year": "2022",
+      "details": "70, 1–12",
+      "doi": "10.1016/j.ymben.2022.01.003"
+    },
+    {
+      "title": "De novo design of a flavin-dependent enzyme for C–H activation",
+      "journal": "Nature Communications",
+      "year": "2021",
+      "details": "12, 4567",
+      "doi": "10.1038/s41467-021-24833-9"
+    }
+  ],
+  "activities": [
+    {
+      "title": "2023年10月 - 团队参加全国合成生物学大会",
+      "description": "周哲敏教授作题为《非天然酶催化的新策略》的邀请报告，博士生李明获“青年优秀论文奖”。",
+      "image": "assets/images/activity1.jpg"
+    },
+    {
+      "title": "2023年6月 - 实验室年度团建",
+      "description": "团队前往太湖湿地公园开展户外拓展活动，增进交流与协作。",
+      "image": "assets/images/activity2.jpg"
+    },
+    {
+      "title": "2023年3月 - 欢迎新成员加入",
+      "description": "两名硕士生与一名博士后正式加入Zhou-lab，开启新课题研究。",
+      "image": ""
+    }
+  ],
+  "jobs": [
+    {
+      "position": "博士后招聘",
+      "details": [
+        "研究方向：蛋白质计算设计、人工智能辅助酶工程",
+        "要求：已获得或即将获得博士学位，具有分子生物学、生物信息学或合成生物学背景；发表过高水平论文者优先。",
+        "待遇：年薪25-35万元，支持申请“博新计划”与江苏省博士后基金。"
+      ]
+    },
+    {
+      "position": "博士/硕士研究生招生",
+      "details": [
+        "欢迎对合成生物学、生物催化方向感兴趣的优秀学生报考苏州大学生命科学学院。可通过推免或统考方式加入团队。"
+      ]
+    },
+    {
+      "position": "科研助理招聘",
+      "details": [
+        "本科及以上学历，生物技术、生物工程等相关专业，有分子克隆或发酵经验者优先。"
+      ]
+    }
+  ],
+  "contact": {
+    "email": "zmzhou@suda.edu.cn",
+    "address": "江苏省苏州市十梓街1号 | 邮编：215006"
+  }
+}
