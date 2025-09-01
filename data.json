@@ -46,41 +46,41 @@
   ],
   "publications": [
     {
-      "title": "Engineering a thermostable transaminase for asymmetric synthesis of chiral amines",
-      "journal": "ACS Catalysis",
-      "year": "2023",
-      "details": "13(5), 3210–3221",
-      "doi": "10.1021/acscatal.2c06012"
-    },
-    {
-      "title": "Dynamic regulation of cofactor regeneration in E. coli for efficient biosynthesis of 1,3-propanediol",
-      "journal": "Metabolic Engineering",
-      "year": "2022",
-      "details": "70, 1–12",
-      "doi": "10.1016/j.ymben.2022.01.003"
-    },
-    {
-      "title": "De novo design of a flavin-dependent enzyme for C–H activation",
+      "title": "Emergence and global spread of a dominant multidrug-resistant clade within Acinetobacter baumannii",
       "journal": "Nature Communications",
-      "year": "2021",
-      "details": "12, 4567",
-      "doi": "10.1038/s41467-021-24833-9"
+      "year": "2025",
+      "details": "16:2787",
+      "doi": "https://doi.org/10.1038/s41467-025-58106-9"
+    },
+    {
+      "title": "Resurgence of Mycoplasma pneumonia by macrolide-resistant epidemic clones in China ",
+      "journal": "Lancet Microbe",
+      "year": "2024",
+      "details": "5(6):e515",
+      "doi": "https://doi.org/10.1016/S2666-5247(23)00405-6"
+    },
+    {
+      "title": "Centralized industrialization of pork in Europe and America contributes to the global spread of Salmonella enterica",
+      "journal": "Nature Food",
+      "year": "2024",
+      "details": "5(5):413-422",
+      "doi": "https://doi.org/10.1038/s43016-024-00968-1"
     }
   ],
   "activities": [
     {
-      "title": "2023年10月 - 团队参加全国合成生物学大会",
-      "description": "周哲敏教授作题为《非天然酶催化的新策略》的邀请报告，博士生李明获“青年优秀论文奖”。",
+      "title": "2025年6月 - 实验室团建",
+      "description": "",
       "image": "assets/images/activity1.jpg"
     },
     {
-      "title": "2023年6月 - 实验室年度团建",
-      "description": "团队前往太湖湿地公园开展户外拓展活动，增进交流与协作。",
+      "title": "2024年12月 - 实验室团建",
+      "description": "",
       "image": "assets/images/activity2.jpg"
     },
     {
-      "title": "2023年3月 - 欢迎新成员加入",
-      "description": "两名硕士生与一名博士后正式加入Zhou-lab，开启新课题研究。",
+      "title": "2024年6月 - 实验室团建",
+      "description": "",
       "image": ""
     }
   ],
