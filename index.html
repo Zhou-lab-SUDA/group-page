@@ -99,6 +99,8 @@
 
           // 成员
           const membersList = document.getElementById('members-list');
+          membersList.className = 'members-grid'; // 设置为网格容器
+          
           data.members.forEach(m => {
             const div = document.createElement('div');
             div.className = 'member';
@@ -112,7 +114,6 @@
             `;
             membersList.appendChild(div);
           });
-
           // 发表文章
           const pubList = document.getElementById('publications-list');
           data.publications.forEach(p => {
