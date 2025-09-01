@@ -105,31 +105,59 @@ h3 {
   color: #34495e;
 }
 
-/* 成员样式 */
+/* 成员两列网格布局 */
+.members-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 25px;
+}
+
+/* 每个成员容器 */
 .member {
   display: flex;
-  margin-bottom: 20px;
-  gap: 20px;
+  gap: 15px;
   align-items: flex-start;
+  padding: 15px;
+  border-radius: 8px;
+  background-color: #f9f9fb;
+  border: 1px solid #e0e0e0;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.member:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 12px rgba(0,0,0,0.08);
 }
 
 .member img {
-  width: 100px;
-  height: 100px;
+  width: 80px;
+  height: 80px;
   border-radius: 50%;
   object-fit: cover;
-  border: 3px solid #ddd;
+  border: 2px solid #ddd;
 }
 
 .member-info h4 {
-  margin: 0 0 5px 0;
+  margin: 0 0 6px 0;
   color: #2c3e50;
+  font-size: 1.1em;
 }
 
 .member-info p {
-  margin: 5px 0;
+  margin: 4px 0;
   color: #555;
   font-size: 0.95em;
+  line-height: 1.4;
+}
+
+/* 响应式：移动端变为单列 */
+@media (max-width: 768px) {
+  .members-grid {
+    grid-template-columns: 1fr;
+  }
+  .hero-content h1 {
+    font-size: 2em;
+  }
 }
 
 /* 文章样式 */
