@@ -20,29 +20,43 @@
       "role": "教授",
       "image": "assets/images/zhou.jpg",
       "research": "病原计算生物学",
-      "email": "zmzhou@suda.edu.cn"
+      "email": "zmzhou at suda.edu.cn"
     },
     {
-      "name": "",
-      "role": "",
-      "image": "assets/images/postdoc.jpg",
+      "name": "李恒",
+      "role": "副教授",
+      "image": "assets/images/hli.jpg",
+      "research": "人兽共患病、感染与耐药",
+      "email": ""
+    },
+    {
+      "name": "夏淑婷",
+      "role": "副研究员",
+      "image": "assets/images/stxia.jpg",
       "research": "",
       "email": ""
     },
     {
-      "name": "",
-      "role": "",
-      "image": "assets/images/phd1.jpg",
-      "research": "",
+      "name": "谢士昌",
+      "role": "博士",
+      "image": "assets/images/xiest.jpg",
+      "research": "生物信息学、微生物组学",
       "email": ""
     },
     {
-      "name": "",
-      "role": "",
-      "image": "assets/images/ms1.jpg",
-      "research": "",
+      "name": "钟岭",
+      "role": "博士",
+      "image": "assets/images/zhongling.jpg",
+      "research": "病原基因组学、古代微生物",
       "email": ""
-    }
+    },
+    {
+      "name": "刘永",
+      "role": "博士",
+      "image": "assets/images/liuyong.jpg",
+      "research": "基因组大模型、医学信息学",
+      "email": ""
+    },
   ],
   "publications": [
     {
@@ -90,7 +104,7 @@
       "details": [
         "研究方向：人工智能肿瘤多组学",
         "生物信息学、肿瘤免疫、检验学、微生物学专业，有人工智能、微生物组学、转录组学、单细胞组学、空间转录组学等相关研究经验者优先。",
-        "待遇：年薪25-35万元，支持申请“博新计划”与江苏省博士后基金。"
+        "待遇：年薪30-40万元，支持申请“博新计划”与江苏省博士后基金。"
       ]
     },
     {
@@ -108,6 +122,6 @@
   ],
   "contact": {
     "email": "zmzhou@suda.edu.cn",
-    "address": "江苏省苏州市十梓街1号 | 邮编：215006"
+    "address": "中国江苏省苏州市吴中区仁爱路199号 | 邮编：215123"
   }
 }
